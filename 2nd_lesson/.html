@@ -38,7 +38,7 @@
         <script>
             let name = prompt("이름을 입력하세요");
             for (let hakbun = 1; hakbun <= 14; hakbun++) {
-                document.write("<tr><td>" + hakbun + "</td><td id='namepo" + hakbun + "'></td></tr>");
+                document.write('<tr><td>${hakbun}</td><td id='namepo${hakbun}'></td></tr>');
             }
             document.getElementById("namepo2").innerHTML = name;
         </script>
