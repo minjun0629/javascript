@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+
+<body>
+
+    <script>
+        let a = 10; //number형 값을 할당
+        let b = 3;
+
+        console.log("덧셈 a+b :", a + b);
+        console.log("뺼셈 a-b :", a - b);
+        console.log("곱셈 a*b :", a * b);
+        console.log("나눗셈 a/b :", a / b);
+        console.log("나머지 a%b :", a % b);
+        console.log("a++ :", a++); //증가연산자 a++의 의미 a=a+1 a를 1증가시키고, 그 값을 a에 재할당
+        console.log("a-- :", a--); //감소연산자 a-- 의미 a=a-1; a를 1감소시키고, 그 값을 a에 재할당
+
+        let numLol = Number('123');
+        console.log("Number('123') 호출 : ", numLol);
+        // '123'이라는 문자열을 숫자 123으로 변환
+
+        let numLol1 = Number(123);
+        console.log("Number(123) 호출 : ", numLol1);
+        // 이미 숫자인 123을 숫자 123으로 변환 (변화 없음)
+
+        let numLol2 = Number('123ABC');
+        console.log("Number('123ABC') 호출 : ", numLol2);
+        // 숫자+문자 혼합 문자열은 숫자로 변환 불가 -> NaN 출력
+
+        let numLol3 = parseInt('123');
+        console.log("parseInt('123') 호출 : ", numLol3);
+        // 문자열 '123'을 정수 123으로 변환
+
+        let numLol4 = parseInt('12.3');
+        console.log("parseInt('12.3') 호출 : ", numLol4);
+        // 문자열 '12.3'에서 소수점 이하 버리고 정수 12만 변환
+
+        let numLol5 = parseInt('123ABC');
+        console.log("parseInt('123ABC') 호출 : ", numLol5);
+        // 숫자 부분만 읽어서 123으로 변환, 문자 'ABC'는 무시
+
+        let numLol6 = parseFloat('123');
+        console.log("parseFloat('123') 호출 : ", numLol6);
+        // 문자열 '123'을 부동소수점 숫자 123으로 변환
+
+        let numLol7 = parseFloat('12.3');
+        console.log("parseFloat('12.3') 호출 : ", numLol7);
+        // 문자열 '12.3'을 소수점 포함 숫자 12.3으로 변환
+
+        let numLol8 = parseFloat('123ABC');
+        console.log("parseFloat('123ABC') 호출 : ", numLol8);
+        // 숫자 부분 123만 읽어서 변환, 문자 'ABC' 무시
+
+        let numLol9 = String('123');
+        console.log("String('123') 호출 : ", numLol9);
+        // 숫자나 다른 타입을 문자열 '123'으로 변환
+
+        let numLol10 = String('True');
+        console.log("String('True') 호출 : ", numLol10);
+        // 그대로 문자열 'True' 출력
+
+        let numLol11 = Boolean(1);
+        console.log("Boolean(1) 호출 : ", numLol11);
+        // 숫자 1은 true로 변환됨
+
+        let numLol12 = Boolean(0);
+        console.log("Boolean(0) 호출 : ", numLol12);
+        // 숫자 0은 false로 변환됨
+
+        let numLol13 = Boolean('ABC');
+        console.log("Boolean('ABC') 호출 : ", numLol13);
+        // 빈 문자열이 아니므로 true로 변환됨
+
+        let numLol14 = Boolean('');
+        console.log("Boolean('') 호출 : ", numLol14);
+        // 빈 문자열은 false로 변환됨
+
+
+    </script>
+
+</body>
+
+</html>
