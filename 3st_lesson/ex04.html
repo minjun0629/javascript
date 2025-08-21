@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="result"></p>
+
+  <script>
+    function abc(num) {
+      return num
+    }
+
+    let min = 0;
+
+    for (let i = 1; i <= 5; i++) {
+      min += abc(i);
+    }
+
+    document.getElementById('result').innerText = '1부터 5까지 더하면 ' + min + ' 입니다';
+  </script>
+</body>
+</html>
