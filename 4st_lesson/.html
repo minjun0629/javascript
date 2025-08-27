@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+    <style>
+        /* table */
+        table{float:left;border-collapse:collapse;border: 1px solid red; margin-bottom: 20px;}
+        td{border: 1px dotted red;}
+
+        /* flex Case */
+        .flexWrap{clear:both;display: flex;border:1px solid blue;margin-bottom: 20px;}
+        .flexlayout{padding: 5px;border: 1px dotted blue;}
+
+        /* floating Case */
+        .wrap{float: left;width: 100%;margin-bottom: 20px;}
+        .wrap::after{content:"";display: block;clear: both;}
+        .danlayout{float:left;width:150px;border: 1px dotted #000;}
+    </style>
+</head>
+<body>
+    <!-- flex Case-->
+     <!--
+     <div class="flexwrap">
+        <div class="flexlayout"></div>
+     </div>
+    -->
+    <!-- //floating case-->
+    <!--<div class='wrap'>
+        <div class='danlayout'></div>
+    </div> -->
+    <!-- //DIV case-->
+    <h2>table Case</h2>
+    <script>
+        //table case
+        //a단을 표시하는 숫자
+        document.write("<table><tr>");
+        for(let a = 2; a <= 9; a++){
+            document.write("<td>");
+                //i 단마다 곱해줄 숫자
+            for(let i = 1; i <= 9; i++){
+                document.write(`${a} * ${i} = ${a * i}<br>`);
+            }
+            document.write("</td>");
+        } 
+        document.write("</tr></table>");
+    </script>
+
+    <h2>flex Case</h2>
+    <script>
+        //a 단을 표시하는 숫자
+        document.write("<div class='flexWrap'>");
+        for(let a = 2; a <= 9; a++){    
+            document.write("<div class='flexlayout'>");
+            //i 단마다 곱해줄 숫자
+            for(let i = 1; i <= 9; i++) {
+                document.write(`${a} * ${i} = ${a * i}<br>`);
+            }
+            document.write("</div>");
+        }
+        document.write("</div>");
+    </script>
+
+    <h2>floating Case</h2>
+    <script>
+        //flexting Case
+        //a 단을 표시하는 숫자
+        document.write("<div class='wrap'>");
+        for(let a = 2; a <= 9; a++){
+            document.write("<div class='danlayout'>");
+            //i 단마다 곱해줄 숫자
+            for(let i = 1; i <= 9; i++){
+                document.write(`${a} * ${i} = ${a * i}<br>`);
+            }
+            document.write("</div>");
+        }
+        document.write("</div>");
+    </script>
+</body>
+</html>
