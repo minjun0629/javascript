@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3의 백수 찾기</title>
+</head>
+<body>
+    <!-- 
+    [문제]
+    1. 사용자가 숫자를 입력하면, 1부터~입력받은 숫자, prompt()
+
+    2. 3배수 숫자를 화면에 모두 출력, document.write()
+
+    3. 3배수 숫자는 총 몇개인가요? 3배수 일때마다 값을 증가(++)
+
+    4. 반복문 (1부터 입력받은 숫자까지)
+    - while(1 > && < 입력받은 숫자){}
+    - for(초기값 = 1; < = 입력받은 숫자; ++){}
+
+    5.입력받은 숫자를 3으로 나누어 나머지가 0이냐? 확인
+    - 조건문(if)
+    - true면 : 3의 배수 숫자로 판단하고, 3의 배수 카운트 증가(++)
+     -->
+    <script>
+        let inputNumber = prompt("숫자를 입력해주세요", "100");
+        let count = 0;
+
+        for(let  i = 1; i <= inputNumber; i++){
+            if(i % 3 === 0){//true
+                count ++;
+                document.write(`${i},`);
+            }
+        }
+
+        document.write(`${inputNumber}까지의 3 배수 숫자 갯수는 : ${count}`);
+    </script>
+    
+</body>
+</html>
